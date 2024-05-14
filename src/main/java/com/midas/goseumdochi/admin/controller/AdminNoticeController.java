@@ -1,13 +1,12 @@
 package com.midas.goseumdochi.admin.controller;
 
-import com.midas.goseumdochi.admin.dto.NoticeDTO;
-import com.midas.goseumdochi.admin.entity.NoticeEntity;
-import com.midas.goseumdochi.admin.repository.NoticeRepository;
+import com.midas.goseumdochi.admin.dto.AdminNoticeDTO;
+import com.midas.goseumdochi.admin.entity.AdminNoticeEntity;
+import com.midas.goseumdochi.admin.repository.AdminNoticeRepository;
 import jakarta.servlet.http.HttpSession;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
 import java.sql.Date;
@@ -15,12 +14,12 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api/admin")
-public class NoticeController {
+public class AdminNoticeController {
 
-    private final NoticeRepository noticeRepository;
+    private final AdminNoticeRepository noticeRepository;
 
     @Autowired
-    public NoticeController(NoticeRepository noticeRepository) {
+    public AdminNoticeController(AdminNoticeRepository noticeRepository) {
         this.noticeRepository = noticeRepository;
     }
 
@@ -32,17 +31,17 @@ public class NoticeController {
     }
 
     @GetMapping("/noticeList")
-    public ResponseEntity<List<NoticeEntity>> showNoticeList() {
+    public ResponseEntity<List<AdminNoticeEntity>> showNoticeList() {
         if (!isLoggedIn()) {
             return ResponseEntity.status(HttpStatus.UNAUTHORIZED).build();
         }
 
-        List<NoticeEntity> noticeEntities = noticeRepository.findAll();
+        List<AdminNoticeEntity> noticeEntities = noticeRepository.findAll();
         return ResponseEntity.ok(noticeEntities);
     }
 
     @PostMapping("/addNotice")
-    public ResponseEntity<String> addNotice(@RequestBody NoticeDTO noticeDTO) {
+    public ResponseEntity<String> addNotice(@RequestBody AdminNoticeDTO noticeDTO) {
         if (!isLoggedIn()) {
             return ResponseEntity.status(HttpStatus.UNAUTHORIZED).build();
         }
@@ -54,7 +53,7 @@ public class NoticeController {
         Date regdate = new Date(System.currentTimeMillis());
 
         // 공지사항을 저장
-        NoticeEntity notice = new NoticeEntity();
+        AdminNoticeEntity notice = new AdminNoticeEntity();
         notice.setTitle(noticeDTO.getTitle());
         notice.setContent(noticeDTO.getContent());
         notice.setRegdate(regdate);

@@ -2,16 +2,16 @@ package com.midas.goseumdochi.admin.dto;
 
 import java.sql.Date;
 
-public class NoticeDTO {
+public class AdminNoticeDTO {
     private String title;
     private String content;
     private String writer;
     private Date regdate;
 
-    public NoticeDTO() {
+    public AdminNoticeDTO() {
     }
 
-    public NoticeDTO(String title, String content, String writer, Date regdate) {
+    public AdminNoticeDTO(String title, String content, String writer, Date regdate) {
         this.title = title;
         this.content = content;
         this.writer = writer;

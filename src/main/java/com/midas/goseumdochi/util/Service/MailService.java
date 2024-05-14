@@ -68,4 +68,17 @@ public class MailService {
         });
     }
 
+    // 원장 id,pw 메일전송 (하은 추가)
+    public void directorMailSend(String directorEmail, String directorId) {
+        MailDTO dto = new MailDTO();
+        dto.setAddress(directorEmail);
+        dto.setTitle("학원장 ID 및 임시 비밀번호 발급 안내");
+        dto.setMessage("안녕하세요. 웹사이트 고슴도치 입니다. \n 신청해주신 학원 등록이 승인처리되었습니다. " +
+                "\n 웹사이트를 이용하기 위한 ID와 임시 비밀번호를 발급해드리겠습니다. " +
+                "\n 임시 비밀번호는 빠른시일내에 변경하시길 바랍니다. " +
+                "\n\n ID: " + directorId + "\n 임시 비밀번호: 0000" +
+                "\n\n 저희 웹사이트를 이용해주셔서 감사합니다. ");
+        mailSend(dto);
+    }
+
 }

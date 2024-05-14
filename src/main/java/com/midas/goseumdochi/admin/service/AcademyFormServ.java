@@ -6,6 +6,7 @@ import com.midas.goseumdochi.director.entity.DirectorEntity;
 import com.midas.goseumdochi.academy.entity.AcademyFormEntity;
 import com.midas.goseumdochi.academy.repository.AcademyFormRepository;
 import com.midas.goseumdochi.director.repository.DirectorRepository;
+import com.midas.goseumdochi.util.Service.MailService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -21,12 +22,20 @@ public class AcademyFormServ {
 
     private final DirectorRepository directorRepos;
 
+
+    // 원장 id,pw 메일 전송
+    private final MailService mailService;
+
+
     @Autowired
-    public AcademyFormServ(AcademyFormRepository academyFormRepository, AcademyRepository academyRepository, DirectorRepository directorRepos) {
+    public AcademyFormServ(AcademyFormRepository academyFormRepository, AcademyRepository academyRepository, DirectorRepository directorRepos, MailService mailService) {
         this.academyFormRepository = academyFormRepository;
         this.academyRepository = academyRepository;
         this.directorRepos = directorRepos;
+        this.mailService = mailService;
     }
+
+
 
     public List<AcademyFormEntity> getAllAcademyForms() {
         return academyFormRepository.findAll();
@@ -63,6 +72,7 @@ public class AcademyFormServ {
                 .loginid(directorId) // 원장 ID 설정
                 .build();
         directorRepos.save(directorEntity);
+        mailService.directorMailSend(academyFormEntity.getDirectorEmail(), directorId); // 원장 id를 이메일로 전송
     }
 
     public void rejectAcademyForm(Long academyFormId) {
@@ -72,4 +82,6 @@ public class AcademyFormServ {
         // 거절 처리
         academyFormEntity.setAuthStatus(-1); // 거절 상태로 변경
     }
+
+
 }

@@ -1,4 +1,4 @@
-package com.midas.goseumdochi.admin.entity;
+package com.midas.goseumdochi.director.entity;
 
 import jakarta.persistence.*;
 import lombok.*;
@@ -6,11 +6,11 @@ import lombok.*;
 import java.sql.Date;
 
 @Entity
-@Table(name = "notice_admin")
+@Table(name = "notice_director")
 @Getter @Setter
 @ToString
 @NoArgsConstructor
-public class NoticeEntity {
+public class DirectorNoticeEntity {
     @Id
     @Column(name = "nNum")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -29,7 +29,7 @@ public class NoticeEntity {
     private String writer;
 
     @Builder
-    public NoticeEntity(int num, String title, String content, Date regdate, String writer) {
+    public DirectorNoticeEntity(int num, String title, String content, Date regdate, String writer) {
         this.num = num;
         this.title = title;
         this.content = content;

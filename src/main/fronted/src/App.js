@@ -12,6 +12,11 @@ import App9 from './components/findPW.js';
 import App10 from './components/notice.js';
 import App11 from './components/newPW.js';
 import App12 from './components/mypage.js';
+import App13 from './components/academy_modify.js';
+import App14 from './components/student_register.js';
+import App15 from './components/subject_register.js';
+import App16 from './components/teacher_register.js';
+import App17 from './components/findacademyform.js';
 import { Component } from 'react';
 
 class App extends Component{
@@ -39,6 +44,11 @@ class App extends Component{
               <Route path='/notice' element={<App10/>}/>
               <Route path='/newPW' element={<App11/>}/>
               <Route path='/mypage' element={<App12/>}/>
+              <Route path='/academymodify' element={<App13/>}/>
+              <Route path='/studentregister' element={<App14/>}/>
+              <Route path='/subjectregister' element={<App15/>}/>
+              <Route path='/teacherregister' element={<App16/>}/>
+              <Route path='/findacademyform' element={<App17/>}/>
             </Routes>   
         </BrowserRouter> 
       </div>

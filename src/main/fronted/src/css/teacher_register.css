@@ -1,0 +1,45 @@
+#blank_teacher_register{
+    width:100%;
+    height:200px;
+}
+hr{
+    border:0 ;
+}
+#write_teacher_register{
+    position: relative;
+    display: block;
+    width: 979px;
+    height: 666px;
+    background-color: #FFFFFF;
+    margin: auto;
+    border-top: solid 3px #000000;
+    margin:0 auto;
+}
+
+#write_teacher_register>#header_teacher_register{
+    width:100%;
+    height:100px;
+}
+
+#write_teacher_register>#writeinfo_teacher_register{
+    width:100%;
+    height:416px;
+}
+
+#write_teacher_register>#button_teacher_register{
+    width:100%;
+    height:150px;
+}
+
+#footer_teacher_register{
+    width:100%;
+    height:114px;
+}
+
+#footer_teacher_register>a{
+    display:block;
+    font-size: 16px;
+    color:#838383;
+    text-align:center;
+    margin-top:100px;
+}

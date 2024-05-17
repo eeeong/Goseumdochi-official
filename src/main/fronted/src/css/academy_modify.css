@@ -1,0 +1,246 @@
+#header_academy_modify{
+    width:100%;
+    height:200px;
+}
+hr{
+    border:0 ;
+}
+
+#body_academy_modify{
+    width: 100%;
+    height: 800px;
+}
+
+#body_academy_modify>#write_academy_modify{
+    width: 979px;
+    height: 666px;
+    background-color: #FFFFFF;
+    margin: auto;
+}
+
+#write_academy_modify>#write_header_academy_modify{
+    width: 100%;
+    height: 181px;
+    border-top: solid 3px #000000;
+}
+
+#write_header_academy_modify>#hd{
+    position: relative;
+    display: block;
+    width: 500px;
+    height: 97px;
+    margin: 48px auto auto;
+}
+
+#hd>img{
+    float: left;
+    position: relative;
+    display: block;
+    width: 97px;
+    height: 97px;
+    margin: auto;
+    object-fit: cover;
+}
+
+#hd>a{
+    float:left;
+    margin-top:25px;
+    margin-left:20px;
+    display:block;
+    font-size: 40px;
+    color:#000000;
+    text-align: center;
+}
+
+#write_academy_modify>#write1_academy_modify{
+    float:left;
+    width: 50%;
+    height: 368px;
+}
+
+#write1_academy_modify>a{
+    font-size: 20px;
+    color:#000000;
+    text-align: center;
+    font-weight: bold;
+    margin-left: 53px;
+}
+
+#write1_academy_modify>#name{
+    display:block;
+    width: 380px;
+    height: 48px;
+    background-color: #DBDBDB;
+    margin-top:10px;
+    margin-left:53px;
+    border-color: #EAEAEA;
+    border-radius: 15px;
+
+    font-size: 16px;
+    color:#6A6A6A;
+    box-shadow: none;  
+}
+
+#write1_academy_modify>input{
+    float:left;
+    display:block;
+    width: 313px;
+    height: 48px;
+    background-color: #DBDBDB;
+    margin-top:10px;
+    margin-left:53px;
+    border-color: #EAEAEA;
+    border-radius: 15px;
+
+    font-size: 16px;
+    color:#6A6A6A;
+    box-shadow: none;  
+}
+
+#write1_academy_modify>#sub1_btn{
+    float:left;
+    display:block;
+    width: 58px;
+    height: 48px;
+    background-color: #E78753;
+    margin-top:10px;
+    margin-left:10px;
+    border-color: #E78753;
+    border-radius: 15px;
+
+    font-size: 14px;
+    color:#FFFFFF;
+    box-shadow: none;  
+}
+
+#write1_academy_modify>#sub2_btn{
+    float:left;
+    display:block;
+    width: 58px;
+    height: 48px;
+    background-color: #E78753;
+    margin-top:10px;
+    margin-left:10px;
+    border-color: #E78753;
+    border-radius: 15px;
+
+    font-size: 14px;
+    color:#FFFFFF;
+    box-shadow: none;  
+}
+
+#write_academy_modify>#write2_academy_modify{
+    float:left;
+    width: 50%;
+    height: 368px;
+}
+
+#write2_academy_modify>a{
+    font-size: 20px;
+    color:#000000;
+    text-align: center;
+    font-weight: bold;
+    margin-left: 53px;
+}
+
+#write2_academy_modify>input{
+    float:left;
+    display:block;
+    width: 380px;
+    height: 48px;
+    background-color: #FFFFFF;
+    margin-top:10px;
+    margin-left:53px;
+    border-color: #EAEAEA;
+    border-radius: 15px;
+
+    font-size: 16px;
+    color:#6A6A6A;
+    box-shadow: none;  
+}
+
+#write2_academy_modify>#address_num{
+    float:left;
+    display:block;
+    width: 313px;
+    height: 48px;
+    background-color: #FFFFFF;
+    margin-top:10px;
+    margin-left:53px;
+    border-color: #EAEAEA;
+    border-radius: 15px;
+
+    font-size: 16px;
+    color:#6A6A6A;
+    box-shadow: none;  
+}
+
+#write2_academy_modify>#sub3_btn{
+    float:left;
+    display:block;
+    width: 58px;
+    height: 48px;
+    background-color: #E78753;
+    margin-top:10px;
+    margin-left:10px;
+    border-color: #E78753;
+    border-radius: 15px;
+
+    font-size: 14px;
+    color:#FFFFFF;
+    box-shadow: none;  
+}
+
+#write_academy_modify>#write_footer_academy_modify{
+    width: 100%;
+    height: 114px;
+}
+
+#write_footer_academy_modify>#modify_btn{
+    float:left;
+    position:relative;
+    display:block;
+    width: 185px;
+    height: 56px;
+    background-color: #363636;
+    border-radius: 15px;
+    margin:auto;
+    margin-left:300px;
+
+    font-size: 20px;
+    color:aliceblue;
+    box-shadow: none;
+    border:none;
+    outline: none;
+}
+
+#write_footer_academy_modify>#back_btn{
+    float:left;
+    position:relative;
+    display:block;
+    width: 195px;
+    height: 56px;
+    background-color: #363636;
+    border-radius: 15px;
+    margin:auto;
+    margin-left:10px;
+
+    font-size: 20px;
+    color:aliceblue;
+    box-shadow: none;
+    border:none;
+    outline: none;
+}
+
+#footer_academy_modify{
+    width:100%;
+    height:80px;
+}
+
+#footer_academy_modify>a{
+    display:block;
+    font-size: 16px;
+    color:#838383;
+    text-align:center;
+    margin: 180px auto auto;
+}

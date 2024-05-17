@@ -25,7 +25,7 @@
     display:block;
     width: 238px;
     height: 34px;
-    background-color: #646464;
+    /*background-color: #646464;*/
     margin-left:984px;
 }
 
@@ -223,7 +223,7 @@ li>a{
     width: 1075px;
     height: 512px;
     margin:auto;
-    background-color:blueviolet
+    /*background-color: aliceblue;*/
 }
 
 #notice-menu>#footer_notice{

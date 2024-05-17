@@ -1,0 +1,82 @@
+#header_findacademyform{
+    width:100%;
+    height:300px;
+}
+hr{
+    border:0 ;
+}
+#write_findacademyform{
+    position: relative;
+    display: block;
+    width: 678px;
+    height: 332px;
+    background-color: #FFFFFF;
+    border-top: solid 3px #000000;
+    margin:0 auto;
+}
+
+#buttons_findacademyform>a{
+    display:block;
+    font-size: 24px;
+    color:#000000;
+    font-weight: bold;
+    text-align: center;
+    margin-top:50px;
+}
+
+#buttons_findacademyform>input{
+    display:block;
+    width: 380px;
+    height: 48px;
+    background-color: #FFFFFF;
+    margin:10px auto;
+    border-color: #6A6A6A;
+    border-radius: 15px;
+
+    font-size: 15px;
+    color:#6A6A6A;
+    box-shadow: none;
+    border-color: #6A6A6A;
+}
+
+#buttons_findacademyform>#btn_findacademyform{
+    width: 380px;
+    height: 48px;
+    margin:18px auto;
+}
+
+#btn_findacademyform>#find_btn{
+    float:left;
+    display:block;
+    width: 185px;
+    height: 56px;
+    background-color: #363636;
+    border-radius: 15px;
+
+    font-size: 20px;
+    color:aliceblue;
+    box-shadow: none;
+    border:none;
+    outline: none;
+}
+
+#btn_findacademyform>#back_btn{
+    float:left;
+    display:block;
+    width: 185px;
+    height: 56px;
+    background-color: #363636;
+    margin-left:9px;
+    border-radius: 15px;
+
+    font-size: 20px;
+    color:aliceblue;
+    box-shadow: none;
+    border:none;
+    outline: none;
+}
+
+#footer_findacademyform{
+    width:100%;
+    height:374px;
+}

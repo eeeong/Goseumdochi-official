@@ -1,0 +1,50 @@
+#blank_student_register{
+    width:100%;
+    height:200px;
+}
+hr{
+    border:0 ;
+}
+#write_student_register{
+    position: relative;
+    display: block;
+    width: 979px;
+    height: 666px;
+    background-color: #FFFFFF;
+    margin: auto;
+    border-top: solid 3px #000000;
+    margin:0 auto;
+}
+
+#write_student_register>#header_student_register{
+    width:100%;
+    height:100px;
+}
+
+#write_student_register>#findinfo_student_register{
+    width:100%;
+    height:233px;
+}
+
+#write_student_register>#selectinfo_student_register{
+    width:100%;
+    height:233px;
+}
+
+#write_student_register>#button_student_register{
+    width:100%;
+    height:100px;
+}
+
+#footer_student_register{
+    width:100%;
+    height:114px;
+}
+
+#footer_student_register>a{
+    display:block;
+    font-size: 16px;
+    color:#838383;
+    text-align:center;
+    margin-top:100px;
+}

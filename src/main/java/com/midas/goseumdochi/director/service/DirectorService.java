@@ -14,7 +14,7 @@ public class DirectorService {
     private final DirectorRepository directorRepository;
 
     // 로그인아이디와 비밀번호로 원장 찾기
-    public DirectorDTO findDirector(String loginid, String password) { //* 리턴을 Optional로 할까
+    public DirectorDTO login(String loginid, String password) {
         Optional<DirectorEntity> findDirector = directorRepository.findByLoginidAndPassword(loginid, password);
 
         // 원장 없음

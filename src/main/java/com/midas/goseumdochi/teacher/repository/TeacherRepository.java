@@ -7,6 +7,7 @@ import org.springframework.data.repository.query.Param;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;
+import java.util.Optional;
 
 @Repository
 public interface TeacherRepository extends JpaRepository<TeacherEntity, Long> {
@@ -14,6 +15,6 @@ public interface TeacherRepository extends JpaRepository<TeacherEntity, Long> {
     @Query("SELECT t FROM TeacherEntity t WHERE t.academyEntity.id = :academyId")
     List<TeacherEntity> findAllByAcademyId(@Param("academyId") Long academyId);
 
-    // 로그인 ID로 선생님을 찾는 쿼리 메서드
-    TeacherEntity findByLoginid(String loginid);
+    @Query("SELECT t FROM TeacherEntity t WHERE t.loginid = :loginid")
+    Optional<TeacherEntity> findByLoginid(@Param("loginid") String loginid);
 }

@@ -12,9 +12,10 @@ function App14() {
                 </div>
                 <div id="findinfo_student_register">
                     <a>학생 이름</a>
-                    <input type="text" value="이름" id="name"/><hr/>
+                    <input type="text" placeholder="이름" id="name"/>
+                    <hr/>
                     <a>전화 번호</a>
-                    <input type="text" value="000-0000-0000" id="phonenum"/>
+                    <input type="text" placeholder="000-0000-0000" id="phonenum"/>
                     <input type="submit" value="찾기" id="find_btn"/>
                 </div>
                 <div id="selectinfo_student_register">

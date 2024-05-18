@@ -13,10 +13,10 @@ function App16() {
                 <div id="writeinfo_teacher_register">
                     <a>선생 정보 입력</a>
                     <div id="writeinfo">
-                        <input type="text" value="이름" id="name"/><hr/>
-                        <input type="text" value="000-0000-0000" id="phonenum"/><hr/>
-                        <input type="date" value="생일" id="birthdate"/><hr/>
-                        <input type="text" value="이메일" id="email"/><hr/>
+                        <input type="text" placeholder="이름" id="name"/><hr/>
+                        <input type="text" placeholder="000-0000-0000" id="phonenum"/><hr/>
+                        <input type="date" placeholder="생일" id="birthdate"/><hr/>
+                        <input type="text" placeholder="이메일" id="email"/><hr/>
                     </div>
                 </div>
                 <div id="button_teacher_register">

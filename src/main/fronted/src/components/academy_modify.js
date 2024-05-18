@@ -16,7 +16,7 @@ function App13() {
                     <div id="write_header_academy_modify">
                         <div id="hd">
                             <img src={logo}/>
-                            <a>학원 신청서 수정</a>
+                            <a>학원 신청서 확인</a>
                         </div>
                     </div>
                     <div id="write1_academy_modify">

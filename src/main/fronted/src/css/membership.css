@@ -51,7 +51,7 @@ hr{
     
 }
 
-#membership_write_buttons>#create_btn{
+#membership_write_buttons>#submit_btn{
     display:block;
     width: 380px;
     height: 48px;

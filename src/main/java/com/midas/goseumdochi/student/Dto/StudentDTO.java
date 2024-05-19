@@ -25,6 +25,15 @@ public class StudentDTO {
     private String studentEmail;
 
     private String profilePictureUrl;
+
+    private String currentPassword;
+
+    private String confirmPassword;
+
+
+    private String newPassword;
+
+    private String confirmNewPassword;
     
 
     public static StudentDTO toStudentDTO(StudentEntity studentEntity){

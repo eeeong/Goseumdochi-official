@@ -1,4 +1,4 @@
-#notice-menu{
+#lectureportal-menu{
     display: block;
     width: 1358px;
     height: 1080px;
@@ -7,13 +7,13 @@
     border-radius: 100px;
 }
 
-#notice-menu>#header_notice{
+#lectureportal-menu>#header_lectureportal{
     width:1358px;
     height:200px;
 
 }
 
-#header_notice>img{
+#header_lectureportal>img{
     display:block;
     width: 162px;
     height: 162px;
@@ -21,21 +21,21 @@
     object-fit: cover;
 }
 
-#header_notice>#user_info{
+#header_lectureportal>#user_info{
     display:block;
     width: 238px;
     height: 34px;
-    background-color: #646464;
+    /*background-color: #646464;*/
     margin-left:984px;
 }
 
-#notice-menu>#buttons_notice{
+#lectureportal-menu>#buttons_lectureportal{
     display: block;
     width: 1358px;
     height: 100px;
 }
 
-#buttons_notice>#rect{
+#buttons_lectureportal>#rect{
     position: absolute;
     float:left;
     width: 1086px;
@@ -47,7 +47,7 @@
     background: #7A7A7A;
 }
 
-#buttons_notice>input{
+#buttons_lectureportal>input{
     position: relative;
     display:block;
     float:left;
@@ -68,22 +68,22 @@ input>#notice_btn{
     background-color: #E78753;
 }
 
-#buttons_notice>input:hover {
+#buttons_lectureportal>input:hover {
     background:#E78753;
     color:#fff;
 }
 
-#buttons_notice>#notice_btn{
+#buttons_lectureportal>#notice_btn{
     margin-left:202px;
 }
 
-#notice-menu>#contents_notice{
+#lectureportal-menu>#contents_lectureportal{
     display: block;
     width: 1358px;
     height: 700px;
 }
 
-#contents_notice>#aboutNotice_notice{
+#contents_lectureportal>#aboutNotice_lectureportal{
     width: 1190px;
     height: 668px;
     margin:auto;
@@ -223,7 +223,7 @@ li>a{
     width: 1075px;
     height: 512px;
     margin:auto;
-    background-color:blueviolet
+    /*background-color: aliceblue;*/
 }
 
 #notice-menu>#footer_notice{

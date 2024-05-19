@@ -1,0 +1,49 @@
+hr{
+    border:0 ;
+}
+#header_adminmain{
+    width:100%;
+    height: 326px;
+}
+
+#header_adminmain>img{
+    display:block;
+    width: 276px;
+    height: 276px;
+    margin:auto;
+    margin-top:50px;
+    object-fit: cover;
+}
+
+#admin_info{
+    width:100%;
+    height:154px;
+}
+
+#admin_info>#info{
+    width:300px;
+    height:150px;
+    margin:auto;
+    background-color:aqua;
+}
+
+#admin_info>a{
+    display:block;
+    font-size: 30px;
+    color:#000000;
+    text-align: center;
+    margin:auto;
+}
+
+#admin_info>#logout{
+    display:block;
+    font-size: 30px;
+    color:#000000;
+    text-align: center;
+    margin:auto;
+}
+
+#button_adminmain{
+    width:100%;
+    height:600px;
+}

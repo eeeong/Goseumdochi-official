@@ -53,7 +53,7 @@ public class TeacherService {
 
     // 로그인된 선생님 DTO 찾기
     public TeacherDTO findByLoginid(String loginid) {
-        TeacherEntity teacherEntity = teacherRepository.findByLoginid(loginid);
+        TeacherEntity teacherEntity = teacherRepository.findByLoginid(loginid).get();
         return TeacherDTO.toTeacherDTO(teacherEntity);
     }
 }

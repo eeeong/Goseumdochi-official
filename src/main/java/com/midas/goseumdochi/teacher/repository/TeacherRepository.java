@@ -13,4 +13,7 @@ public interface TeacherRepository extends JpaRepository<TeacherEntity, Long> {
     //fk로 찾기
     @Query("SELECT t FROM TeacherEntity t WHERE t.academyEntity.id = :academyId")
     List<TeacherEntity> findAllByAcademyId(@Param("academyId") Long academyId);
+
+    // 로그인 ID로 선생님을 찾는 쿼리 메서드
+    TeacherEntity findByLoginid(String loginid);
 }

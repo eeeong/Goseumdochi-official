@@ -50,4 +50,10 @@ public class TeacherService {
                 , String.format("선생님 이름: %s\n 아이디: %s\n임시비밀번호: %s", teacherDTO.getName(), teacherDTO.getLoginid(), teacherDTO.getPassword()));
         return mailDTO;
     }
+
+    // 로그인된 선생님 DTO 찾기
+    public TeacherDTO findByLoginid(String loginid) {
+        TeacherEntity teacherEntity = teacherRepository.findByLoginid(loginid);
+        return TeacherDTO.toTeacherDTO(teacherEntity);
+    }
 }

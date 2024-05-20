@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notice List</title>
+</head>
+<body>
+<h2>공지사항</h2>
+<a href="/admin/noticeForm" style="margin-bottom: 10px;">공지사항 작성</a>
+<table border="1">
+    <thead>
+    <tr>
+        <th>제목</th>
+        <th>내용</th>
+        <th>작성일</th>
+        <th>작성자</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="notice : ${noticeEntities}">
+        <td th:text="${notice.title}"></td>
+        <td th:text="${notice.content}"></td>
+        <td th:text="${notice.regdate}"></td>
+        <td th:text="${notice.writer}"></td>
+    </tr>
+    </tbody>
+</table>
+</body>
+</html>

@@ -97,6 +97,21 @@ hr{
     box-shadow: none;  
 }
 
+#write1_academy_register>#email{
+    display:block;
+    width: 380px;
+    height: 48px;
+    background-color: #DBDBDB;
+    margin-top:10px;
+    margin-left:53px;
+    border-color: #EAEAEA;
+    border-radius: 15px;
+
+    font-size: 16px;
+    color:#6A6A6A;
+    box-shadow: none;
+}
+
 #write1_academy_register>#sub1_btn{
     float:left;
     display:block;

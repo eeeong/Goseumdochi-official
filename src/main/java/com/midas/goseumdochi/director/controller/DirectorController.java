@@ -24,7 +24,7 @@ public class DirectorController {
     // 로그인 폼 작성 후
     @PostMapping("/login")
     public ResponseEntity<?> login(@RequestParam String directorLoginid, @RequestParam String directorPassword) {
-        DirectorDTO directorDTO = directorService.findDirector(directorLoginid, directorPassword);
+        DirectorDTO directorDTO = directorService.login(directorLoginid, directorPassword);
 
         if(directorDTO == null) { // 로그인 실패
             return ResponseEntity

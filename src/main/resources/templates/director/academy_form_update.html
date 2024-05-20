@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>academy_form</title>
+</head>
+<body>
+<div>
+    <div>
+        <h2>학원 등록 신청</h2>
+    </div>
+
+    <form role="form" action="/academy/form/update" method="post" th:object="${academyFormDTO}">
+        <div>
+            <div>
+                <h5>학원 정보 입력</h5>
+            </div>
+            <div>
+                <!-- th:for label의 for 속성, input의 id와 연결 -->
+                <!-- th:object, th:field 는 세트? model에서 받아온 ? -->
+                <label th:for="academyName">이름</label>
+                <input type="text" th:field="*{academyName}" id="academyName" placeholder="이름" required readonly>
+            </div>
+            <div>
+                <label th:for="academyPhoneNumber">전화번호</label>
+                <input type="text" th:field="*{academyPhoneNumber}" id="academyPhoneNumber"
+                       path="phone" oninput="numberphone(this)" placeholder="전화번호" maxlength="13" required readonly>
+            </div>
+            <div>
+                <label th:for="academyPostcode">우편주소</label>
+                <input type="text" th:field="*{academyPostcode}" id="academyPostcode" placeholder="우편주소" required readonly>
+                <input type="button" onclick="findPostcode()" value="우편번호 찾기"><br>
+            </div>
+            <div>
+                <label th:for="academyAddress">주소</label>
+                <input type="text" th:field="*{academyAddress}" id="academyAddress" placeholder="주소" required readonly>
+            </div>
+            <div>
+                <label th:for="academyAddressDetail">상세주소</label>
+                <input type="text" th:field="*{academyAddressDetail}" id="academyAddressDetail" placeholder="상세주소" required readonly>
+            </div>
+        </div>
+        <div>
+            <div>
+                <h5>원장 정보 입력</h5>
+            </div>
+            <div>
+                <label th:for="directorName">이름</label>
+                <input type="text" th:field="*{directorName}" id="directorName" placeholder="이름" required readonly>
+            </div>
+            <div>
+                <label th:for="directorPhoneNumber">전화번호</label>
+                <input type="text" th:field="*{directorPhoneNumber}" id="directorPhoneNumber" placeholder="전화번호" required readonly>
+            </div>
+            <div>
+                <label th:for="directorEmail">이메일</label>
+                <input type="text" th:field="*{directorEmail}" id="directorEmail" placeholder="전화번호" required readonly>
+            </div>
+        </div>
+        <div>
+            <label th:for="authStatus">승인여부: </label>
+            <span th:text="*{authStatus}" id="authStatus"></span>
+        </div>
+        <div>
+            <div>
+<!--                <button type="submit">수정</button>-->
+                <button type="button" id="editBtn" onclick="enableEdit()">수정</button>
+                <button type="submit" id="saveBtn" value="저장하기" style="display: none;">저장</button>
+<!--                <input type="submit" id="saveBtn" value="저장하기" style="display: none;">-->
+            </div>
+            <div>
+                <button onclick="location.href='/'" type="button">취소</button>
+            </div>
+        </div>
+    </form>
+    <!--        <div th:replace="fragments/footer :: footer" />-->
+</div>
+</body>
+
+<!--다음 우편번호 API 주소-->
+<script src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
+<script>
+    // 우편번호 찾기 로직
+    function findPostcode(){
+        new daum.Postcode({
+            oncomplete: function(data) {
+                // 팝업에서 검색결과 항목을 클릭했을때 실행할 코드를 작성하는 부분입니다.
+                // 예제를 참고하여 다양한 활용법을 확인해 보세요.
+                var addr = ''; // 주소 변수
+
+                //사용자가 선택한 주소 타입에 따라 해당 주소 값을 가져온다.
+                if (data.userSelectedType === 'R') { // 사용자가 도로명 주소를 선택했을 경우
+                    addr = data.roadAddress;
+                } else { // 사용자가 지번 주소를 선택했을 경우(J)
+                    addr = data.jibunAddress;
+                }
+                document.getElementById('academyPostcode').value = data.zonecode
+                document.getElementById('academyAddress').value = addr
+                document.getElementById('academyAddressDetail').focus()
+            }
+        }).open();
+    }
+
+    //! 안됨... 왜 안 될까,,효주 도와좌~~
+    // 전화번호 자동 하이픈(-) 로직
+    $(document).on("keyup", ".phone", function() {
+        $(this).val($(this).val().replace(/[^0-9]/g, "")
+            .replace(/(^02|^0505|^1[0-9]{3}|^0[0-9]{2})([0-9]+)?([0-9]{4})$/, "$1-$2-$3" ).replace("--", "-"));
+    });
+    function numberphone(e){
+        if(e.value.length>13){
+            e.value=e.value.slice(0,13);
+        }
+    }
+</script>
+<!--수정하기 버튼 눌렀을 때 함수-->
+<script>
+    function enableEdit() {
+        document.getElementById('academyName').removeAttribute('readonly');
+        document.getElementById('academyPhoneNumber').removeAttribute('readonly');
+        // 우편번호 애들은 readonly 안 지워도 됨
+        document.getElementById('academyAddressDetail').removeAttribute('readonly');
+        document.getElementById('directorName').removeAttribute('readonly');
+        document.getElementById('directorPhoneNumber').removeAttribute('readonly');
+        document.getElementById('directorEmail').removeAttribute('readonly');
+        document.getElementById('saveBtn').style.display = 'block';
+    }
+</script>
+
+</html>

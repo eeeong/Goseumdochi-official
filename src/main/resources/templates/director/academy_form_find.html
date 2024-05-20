@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>학원신청서 열람</title>
+</head>
+<body>
+<h2>학원신청서 열람</h2>
+<form action="/academy/form/find" method="post">
+    <div>
+        <label for="directorName">원장님 이름</label><br>
+        <input type="text" id="directorName" name="directorName" required>
+    </div>
+    <div>
+        <label for="directorPhoneNumber">전화번호</label><br>
+        <input type="tel" id="directorPhoneNumber" name="directorPhoneNumber" required>
+    </div>
+    <div>
+        <label for="authNumber">인증번호</label>
+        <input type="text" id="authNumber" placeholder="인증번호 6자리" required>
+    </div>
+    <div>
+        <input type="submit" value="신청서 찾기">
+    </div>
+</form>
+</body>
+</html>

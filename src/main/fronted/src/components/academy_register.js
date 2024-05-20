@@ -19,7 +19,8 @@ function App7() {
         academyAddressDetail: '',
         directorName: '',
         directorPhoneNumber: '',
-        authNumber: ''
+        authNumber: '',
+        directorEmail: ''
     });
 
     const navigate = useNavigate();
@@ -56,7 +57,7 @@ function App7() {
         <div id="App">
             <div id="header_academy_register"/>
             <div id="body_academy_register">
-                <div id="write_academy_register" onSubmit={handleSubmit}>
+                <form id="write_academy_register" onSubmit={handleSubmit}>
                     <div id="write_header_academy_register">
                         <div id="hd">
                             <img src={logo}/>
@@ -92,6 +93,15 @@ function App7() {
                             required
                         />
                         <input type="submit" value="확인" id="sub2_btn"/><hr/>
+                        <input
+                            type="text"
+                            name="directorEmail"
+                            value={inputs.directorEmail}
+                            onChange={handleChange}
+                            placeholder="이메일"
+                            id="email"
+                            required
+                        /><hr/>
                     </div>
                     <div id="write2_academy_register">
                         <a>학원 정보 입력</a>
@@ -148,7 +158,7 @@ function App7() {
                     <div id="write_footer_academy_register">
                         <input type="submit" value="신청서 제출" id="submit_btn"/>
                     </div>
-                </div>
+                </form>
             </div>
             <div id="footer_academy_register">
                 <a>문의 | midas2024.ver01@gmail.com</a>

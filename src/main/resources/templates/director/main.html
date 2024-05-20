@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>강의포털</title>
+</head>
+<body>
+<div>
+    <h2>귀여운 고슴도치</h2>
+</div>
+<div>
+    <div>
+        <label for="directorId">원장 id: </label>
+        <span th:text="${session.directorId}" id="directorId"></span>
+    </div>
+    <div>
+        <button onclick="location.href='/director/regist_teacher'">선생님 등록</button>
+    </div>
+</div>
+</body>
+</html>

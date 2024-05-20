@@ -197,7 +197,6 @@ hr{
 }
 
 #write_footer_academy_register>#submit_btn{
-    position:relative;
     display:block;
     width: 380px;
     height: 56px;
@@ -208,8 +207,6 @@ hr{
     font-size: 20px;
     color:aliceblue;
     box-shadow: none;
-    border:none;
-    outline: none;
 }
 
 #footer_academy_register{

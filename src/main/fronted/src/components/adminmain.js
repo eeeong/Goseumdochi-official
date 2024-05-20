@@ -10,7 +10,7 @@ function App18() {
             <div id="admin_info">
                 <div id="info">
                     <a>관리자 : ㅇㅇㅇ 님</a>
-                    <div id="logout">
+                    <div id="logout_adminmain">
                         로그아웃
                     </div>
                 </div>

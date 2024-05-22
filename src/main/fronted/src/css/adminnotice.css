@@ -1,0 +1,122 @@
+hr{
+    border:0 ;
+}
+#adminnotice_frame{
+    width:1358px;
+    height:1044px;
+    background-color:#FFFFFF;
+    margin:auto;
+    border-radius:100px;
+}
+
+#adminnotice_frame>#adminnotice_header{
+    width:1358px;
+    height:190px;
+}
+
+#adminnotice_header>a{
+    float:left;
+    font-size: 48px;
+    color:#000000;
+    text-align: center;
+    margin:auto;
+    margin-top:80px;
+    margin-left:120px;
+}
+
+#adminnotice_header>h2{
+    float:left;
+    font-size: 48px;
+    color:#000000;
+    text-align: center;
+    margin:auto;
+    margin-top:80px;
+    margin-left:360px;
+}
+
+#adminnotice_header>#write_btn{
+    float:left;
+    width:145px;
+    height:55px;
+    font-size: 24px;
+    background-color:#D9D9D9;
+
+    color:#000000;
+    text-align: center;
+    margin:auto;
+    margin-top:90px;
+    margin-left:300px;
+    border-radius:14px;
+}
+
+#write_btn>#write{
+    margin:auto;
+    margin-top:10px;
+}
+
+#adminnotice_frame>#rect{
+    width:1135px;
+    height:7px;
+    background-color:#363636;
+    margin:auto;
+    border-radius:5px;
+}
+
+#adminnotice_frame>#adminnotice_body{
+    width:1135px;
+    height:800px;
+    margin:auto;
+}
+
+#adminnotice_body>#adminnotice_category{
+    width:1075px;
+    height:50px;
+    margin:auto;
+    margin-top:20px;
+}
+
+#adminnotice_category>#num{
+    float:left;
+    width:77px;
+    height:50px;
+    font-size: 24px;
+    text-align: center;
+}
+
+#adminnotice_category>#title{
+    float:left;
+    width:557px;
+    height:50px;
+    font-size: 24px;
+    text-align: center;
+}
+
+#adminnotice_category>#postperson{
+    float:left;
+    width:167px;
+    height:50px;
+    font-size: 24px;
+    text-align: center;
+}
+
+#adminnotice_category>#postdate{
+    float:left;
+    width:190px;
+    height:50px;
+    font-size: 24px;
+    text-align: center;
+}
+
+#adminnotice_category>#delete{
+    float:left;
+    width:84px;
+    height:50px;
+    font-size: 24px;
+    text-align: center;
+}
+
+#adminnotice_body>#adminnotice_contents{
+    width:1075px;
+    height:750px;
+    margin:auto;
+}

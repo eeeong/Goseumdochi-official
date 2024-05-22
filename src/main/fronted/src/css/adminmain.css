@@ -49,6 +49,7 @@ hr{
 #button_adminmain{
     width:100%;
     height:650px;
+    min-width:1800px;
 }
 
 #button_adminmain>ul{

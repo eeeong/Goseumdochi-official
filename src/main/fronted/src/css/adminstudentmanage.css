@@ -1,0 +1,124 @@
+hr{
+    border:0 ;
+}
+#adminstudentmanage_frame{
+    width:1358px;
+    height:1044px;
+    background-color:#FFFFFF;
+    margin:auto;
+    border-radius:100px;
+}
+
+#adminstudentmanage_frame>#adminstudentmanage_header{
+    width:1358px;
+    height:190px;
+}
+
+#adminstudentmanage_header>a{
+    float:left;
+    font-size: 48px;
+    color:#000000;
+    text-align: center;
+    margin:auto;
+    margin-top:80px;
+    margin-left:220px;
+}
+
+#adminstudentmanage_header>h2{
+    float:left;
+    font-size: 48px;
+    color:#000000;
+    text-align: center;
+    margin:auto;
+    margin-top:80px;
+    margin-left:360px;
+}
+
+#adminstudentmanage_header>#find_btn{
+    float:left;
+    width:219px;
+    height:46px;
+    font-size: 24px;
+    background-color:#D9D9D9;
+
+    color:#000000;
+    text-align: center;
+    margin:auto;
+    margin-top:90px;
+    margin-left:190px;
+}
+
+#adminstudentmanage_frame>#rect{
+    width:1145px;
+    height:7px;
+    background-color:#363636;
+    margin:auto;
+    border-radius:5px;
+}
+
+#adminstudentmanage_frame>#adminstudentmanage_body{
+    width:1150px;
+    height:800px;
+    margin:auto;
+}
+
+#adminstudentmanage_body>#adminstudentmanage_category{
+    width:1150px;
+    height:50px;
+    margin:auto;
+    margin-top:20px;
+}
+
+#adminstudentmanage_category>#studentId{
+    float:left;
+    width:167px;
+    height:50px;
+    font-size: 24px;
+    text-align: center;
+}
+
+#adminstudentmanage_category>#studentName{
+    float:left;
+    width:122px;
+    height:50px;
+    font-size: 24px;
+    text-align: center;
+}
+
+#adminstudentmanage_category>#studentNum{
+    float:left;
+    width:226px;
+    height:50px;
+    font-size: 24px;
+    text-align: center;
+}
+
+#adminstudentmanage_category>#studentEmail{
+    float:left;
+    width:316px;
+    height:50px;
+    font-size: 24px;
+    text-align: center;
+}
+
+#adminstudentmanage_category>#studentBirthdate{
+    float:left;
+    width:190px;
+    height:50px;
+    font-size: 24px;
+    text-align: center;
+}
+
+#adminstudentmanage_category>#SendLetter{
+    float:left;
+    width:126px;
+    height:50px;
+    font-size: 24px;
+    text-align: center;
+}
+
+#adminstudentmanage_body>#adminstudentmanage_contents{
+    width:1145px;
+    height:750px;
+    margin:auto;
+}

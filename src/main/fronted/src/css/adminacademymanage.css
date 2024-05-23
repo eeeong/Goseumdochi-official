@@ -1,0 +1,141 @@
+hr{
+    border:0 ;
+}
+#adminacademymanage_frame{
+    width:1800px;
+    height:1044px;
+    background-color:#FFFFFF;
+    margin:auto;
+    border-radius:100px;
+}
+
+#adminacademymanage_frame>#adminacademymanage_header{
+    width:1800px;
+    height:190px;
+}
+
+#adminacademymanage_header>a{
+    float:left;
+    font-size: 48px;
+    color:#000000;
+    text-align: center;
+    margin:auto;
+    margin-top:80px;
+    margin-left:120px;
+}
+
+#adminacademymanage_header>h2{
+    float:left;
+    font-size: 48px;
+    color:#000000;
+    text-align: center;
+    margin:auto;
+    margin-top:80px;
+    margin-left:655px;
+}
+
+#adminacademymanage_header>#find_btn{
+    float:left;
+    width:358px;
+    height:48px;
+    background-color:#D9D9D9;
+    font-size: 24px;
+    background-color:#D9D9D9;
+
+    color:#000000;
+    text-align: center;
+    margin:auto;
+    margin-top:90px;
+    margin-left:350px;
+}
+
+#adminacademymanage_frame>#rect{
+    width:1739px;
+    height:7px;
+    background-color:#363636;
+    margin:auto;
+    border-radius:5px;
+}
+
+#adminacademymanage_frame>#adminacademymanage_body{
+    width:1745px;
+    height:800px;
+    margin:auto;
+}
+
+#adminacademymanage_body>#adminacademymanage_category{
+    width:1745px;
+    height:50px;
+    margin:auto;
+    margin-top:20px;
+}
+
+#adminacademymanage_category>#academyName{
+    float:left;
+    width:167px;
+    height:50px;
+    font-size: 24px;
+    text-align: center;
+}
+
+#adminacademymanage_category>#directorName{
+    float:left;
+    width:167px;
+    height:50px;
+    font-size: 24px;
+    text-align: center;
+}
+
+#adminacademymanage_category>#directorNum{
+    float:left;
+    width:213px;
+    height:50px;
+    font-size: 24px;
+    text-align: center;
+}
+
+#adminacademymanage_category>#directorEmail{
+    float:left;
+    width:333px;
+    height:50px;
+    font-size: 24px;
+    text-align: center;
+}
+
+#adminacademymanage_category>#academyNum{
+    float:left;
+    width:213px;
+    height:50px;
+    font-size: 24px;
+    text-align: center;
+}
+
+#adminacademymanage_category>#academyPostnum{
+    float:left;
+    width:167px;
+    height:50px;
+    font-size: 24px;
+    text-align: center;
+}
+
+#adminacademymanage_category>#academyAddress{
+    float:left;
+    width:350px;
+    height:50px;
+    font-size: 24px;
+    text-align: center;
+}
+
+#adminacademymanage_category>#SendLetter{
+    float:left;
+    width:122px;
+    height:50px;
+    font-size: 24px;
+    text-align: center;
+}
+
+#adminacademymanage_body>#adminacademymanage_contents{
+    width:1745px;
+    height:750px;
+    margin:auto;
+}

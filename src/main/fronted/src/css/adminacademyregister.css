@@ -1,0 +1,126 @@
+hr{
+    border:0 ;
+}
+#adminacademyregister_frame{
+    width:1800px;
+    height:1044px;
+    background-color:#FFFFFF;
+    margin:auto;
+    border-radius:100px;
+}
+
+#adminacademyregister_frame>#adminacademyregister_header{
+    width:1358px;
+    height:190px;
+}
+
+#adminacademyregister_header>a{
+    float:left;
+    font-size: 48px;
+    color:#000000;
+    text-align: center;
+    margin:auto;
+    margin-top:80px;
+    margin-left:120px;
+}
+
+#adminacademyregister_header>h2{
+    float:left;
+    font-size: 48px;
+    color:#000000;
+    text-align: center;
+    margin:auto;
+    margin-top:80px;
+    margin-left:600px;
+}
+
+#adminacademyregister_frame>#rect{
+    width:1739px;
+    height:7px;
+    background-color:#363636;
+    margin:auto;
+    border-radius:5px;
+}
+
+#adminacademyregister_frame>#adminacademyregister_body{
+    width:1739px;
+    height:800px;
+    margin:auto;
+}
+
+#adminacademyregister_body>#adminacademyregister_category{
+    width:1728px;
+    height:50px;
+    margin:auto;
+    margin-top:20px;
+}
+
+#adminacademyregister_category>#academyName{
+    float:left;
+    width:167px;
+    height:50px;
+    font-size: 24px;
+    text-align: center;
+}
+
+#adminacademyregister_category>#directorName{
+    float:left;
+    width:167px;
+    height:50px;
+    font-size: 24px;
+    text-align: center;
+}
+
+#adminacademyregister_category>#directorNum{
+    float:left;
+    width:213px;
+    height:50px;
+    font-size: 24px;
+    text-align: center;
+}
+
+#adminacademyregister_category>#directorEmail{
+    float:left;
+    width:333px;
+    height:50px;
+    font-size: 24px;
+    text-align: center;
+}
+
+#adminacademyregister_category>#academyNum{
+    float:left;
+    width:213px;
+    height:50px;
+    font-size: 24px;
+    text-align: center;
+}
+
+#adminacademyregister_category>#academyPostnum{
+    float:left;
+    width:167px;
+    height:50px;
+    font-size: 24px;
+    text-align: center;
+}
+
+#adminacademyregister_category>#academyAddress{
+    float:left;
+    width:350px;
+    height:50px;
+    font-size: 24px;
+    text-align: center;
+}
+
+#adminacademyregister_category>#PassOrRefuse{
+    float:left;
+    width:105px;
+    height:50px;
+    font-size: 24px;
+    text-align: center;
+}
+
+#adminacademyregister_body>#adminacademyregister_contents{
+    width:1728px;
+    height:750px;
+    margin:auto;
+}

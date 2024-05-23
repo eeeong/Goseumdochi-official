@@ -20,6 +20,9 @@ import App17 from './components/findacademyform.js';
 import App18 from './components/adminmain.js';
 import App19 from './components/adminnotice.js';
 import App20 from './components/adminnotice_write.js';
+import App21 from './components/adminacademyregister.js';
+import App22 from './components/adminacademymanage.js';
+import App23 from './components/adminstudentmanage.js';
 import { Component } from 'react';
 
 class App extends Component{
@@ -55,6 +58,9 @@ class App extends Component{
               <Route path='/adminmain' element={<App18/>}/>
               <Route path='/adminnotice' element={<App19/>}/>
               <Route path='/adminnoticewrite' element={<App20/>}/>
+              <Route path='/adminacademyregister' element={<App21/>}/>
+              <Route path='/adminacademymanage' element={<App22/>}/>
+              <Route path='/adminstudentmanage' element={<App23/>}/>
             </Routes>   
         </BrowserRouter> 
       </div>

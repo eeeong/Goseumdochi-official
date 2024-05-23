@@ -14,7 +14,7 @@ def encrypt():
     password = data.get('password')
 
     encrypted_string = encrypt_string_AES(plaintext, password)
-    return jsonify({'encrypted_text': encrypted_string})
+    return encrypted_string
 
 @app.route('/decrypt', methods=['POST'])
 def decrypt():
@@ -23,7 +23,7 @@ def decrypt():
     password = data.get('password')
 
     decrypted_string = decrypt_string_AES(encrypted_base64, password)
-    return jsonify({'decrypted_text': decrypted_string})
+    return decrypted_string
 
 def encrypt_string_AES(plaintext, password):
     key = password.encode("utf-8").ljust(16, b"\x00")[:16]

@@ -1,5 +1,4 @@
 from flask import Flask, request, jsonify
-from fastapi import FastAPI
 from cryptography.hazmat.primitives.ciphers import Cipher, algorithms, modes
 from cryptography.hazmat.backends import default_backend
 from cryptography.hazmat.primitives import padding
@@ -10,20 +9,20 @@ app = Flask(__name__)
 @app.route('/encrypt', methods=['POST'])
 def encrypt():
     data = request.get_json()
-    plaintext = data.get('plaintext')
+    plaintext = data.get('text')
     password = data.get('password')
 
     encrypted_string = encrypt_string_AES(plaintext, password)
-    return encrypted_string
+    return jsonify({'encrypted_text': encrypted_string})
 
 @app.route('/decrypt', methods=['POST'])
 def decrypt():
     data = request.get_json()
-    encrypted_base64 = data.get('encrypted_text')
+    encrypted_base64 = data.get('text')
     password = data.get('password')
 
     decrypted_string = decrypt_string_AES(encrypted_base64, password)
-    return decrypted_string
+    return jsonify({'decrypted_text': decrypted_string})
 
 def encrypt_string_AES(plaintext, password):
     key = password.encode("utf-8").ljust(16, b"\x00")[:16]

@@ -56,8 +56,9 @@ function App8() {
                     type="text"
                     name="studentPhoneNumber"
                     value={inputs.studentPhoneNumber}
+                    onChange={handleChange}
                     placeholder="010-0000-0000"
-                    id="PhoneNum"
+                    id="studentPhoneNumber"
                     required
                 />
                 <input type="submit" value="찾기" id="findID_btn"/><hr/>

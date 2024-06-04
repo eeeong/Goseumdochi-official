@@ -65,7 +65,6 @@ function App3() {
                         name="studentPassword"
                         value={inputs.studentPassword}
                         onChange={handleChange}
-                        onChange={handleChange}
                         placeholder="비밀번호"
                         required
                     /><hr/>

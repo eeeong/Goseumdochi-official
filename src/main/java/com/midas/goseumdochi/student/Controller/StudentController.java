@@ -184,6 +184,14 @@ public class StudentController {
         return ResponseEntity.ok("비밀번호가 변경되었습니다.");
     }
 
+    // 로그아웃 기능
+    @GetMapping("/logout")
+    public ResponseEntity<?> logout(HttpSession session) {
+        session.invalidate(); // 세션 무효화하여 로그아웃 처리
+        return ResponseEntity.ok("로그아웃 성공");
+    }
+
+
     // 학생이 수강하는 강의 리스트 출력 (강의시간 포함)
     @GetMapping("/{studentId}/lecture")
     public ResponseEntity<?> showLectureAndTimeList(@PathVariable Long studentId) {

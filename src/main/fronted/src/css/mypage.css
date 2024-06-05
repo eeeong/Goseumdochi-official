@@ -257,3 +257,25 @@ input>#notice_btn{
     height: 50px;
     margin-top: 30px;
 }
+
+#userphoto_mypage button {
+    display: block;
+    margin: auto;
+    margin-top: 5px;
+    font-size: 20px;
+    border: none;
+    background: none;
+    cursor: pointer;
+    padding-bottom: 5px;
+}
+
+#userphoto_mypage button.selected {
+    border-bottom: 2px solid black;
+}
+
+#userphoto_mypage hr {
+    margin: 10px auto;
+    width: 80%;
+    border: 0;
+    border-top: 1px solid #ddd;
+}

@@ -177,6 +177,42 @@ function App12() {
         }
     };
 
+    const handleLogout = async () => {
+        try {
+            await axios.get('/api/student/logout', {
+                headers: {
+                    'Authorization': `Bearer ${localStorage.getItem('token')}`
+                }
+            });
+            localStorage.removeItem('token'); // 로컬 스토리지에서 토큰 제거
+            window.location.href = '/login'; // 로그인 페이지로 이동
+        } catch (error) {
+            console.error('Error during logout:', error);
+            alert('로그아웃 중 오류가 발생했습니다.');
+        }
+        setVisibleDiv('Logout');
+    };
+
+    useEffect(() => {
+        const profileButton = document.getElementById('my');
+        const changePWButton = document.getElementById('changePW');
+        const logoutButton = document.getElementById('logout');
+
+        if (visibleDiv === 'Profile') {
+            profileButton.classList.add('selected');
+            changePWButton.classList.remove('selected');
+            logoutButton.classList.remove('selected');
+        } else if (visibleDiv === 'ChangePW') {
+            profileButton.classList.remove('selected');
+            changePWButton.classList.add('selected');
+            logoutButton.classList.remove('selected');
+        } else {
+            profileButton.classList.remove('selected');
+            changePWButton.classList.remove('selected');
+            logoutButton.classList.add('selected');
+        }
+    }, [visibleDiv]);
+
     return (
         <div id="App">
             <div id="mypage-menu">
@@ -218,7 +254,7 @@ function App12() {
                                 <span>비밀번호 변경</span>
                             </button>
                             <hr/>
-                            <button id="logout">
+                            <button id="logout" onClick={handleLogout}>
                                 <span>로그아웃</span>
                             </button>
                         </div>

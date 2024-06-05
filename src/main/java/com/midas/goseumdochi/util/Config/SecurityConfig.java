@@ -22,6 +22,7 @@ public class SecurityConfig {
                         .requestMatchers("/api/teacher/**").permitAll()
                         .requestMatchers("/api/student/signup").permitAll()
                         .requestMatchers("/api/student/login").permitAll()
+                        .requestMatchers("/api/student/logout").permitAll()
                         .requestMatchers("/api/student/findStudentId").permitAll()
                         .requestMatchers("/api/student/findStudentPassword").permitAll()
                         .requestMatchers("/api/student/info").permitAll()

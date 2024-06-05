@@ -74,19 +74,114 @@ hr{
 
 #Lecturedata_teacherportal>h2{
     display:block;
+    width:1920px;
+    height:60px;
     margin-left:350px;
 }
 
 #Lecturedata_teacherportal>#Lecturedata{
     width:1920px;
     height:900px;
-    margin-top:30px;
 }
 
 #List_teacherportal>#List{
-    width:1920px;
+    float:left;
+    width:1625px;
     height:800px;
     background-color:#FFFFFF;
+}
+
+#List>#cate_List{
+    width:1625px;
+    height:50px;
+}
+
+#cate_List>#no{
+    float:left;
+    width:100px;
+    height:50px;
+    text-align:center;
+    font-size:24px;
+    margin:auto;
+    margin-top:5px;
+}
+
+#cate_List>#title{
+    float:left;
+    width:900px;
+    height:50px;
+    text-align:center;
+    font-size:24px;
+    margin:auto;
+    margin-top:5px;
+}
+
+#cate_List>#writer{
+    float:left;
+    width:200px;
+    height:50px;
+    text-align:center;
+    font-size:24px;
+    margin:auto;
+    margin-top:5px;
+}
+
+#cate_List>#writedate{
+    float:left;
+    width:425px;
+    height:50px;
+    text-align:center;
+    font-size:24px;
+    margin:auto;
+    margin-top:5px;
+}
+
+#List>#rect{
+    width:1625px;
+    height:7px;
+    background-color:#363636;
+    margin:auto;
+    border-radius:5px;
+}
+
+#body_List>#body_no{
+    float:left;
+    width:100px;
+    height:750px;
+    text-align:center;
+    font-size:24px;
+    margin:auto;
+    margin-top:5px;
+}
+
+#body_List>#body_title{
+    float:left;
+    width:900px;
+    height:750px;
+    text-align:center;
+    font-size:24px;
+    margin:auto;
+    margin-top:5px;
+}
+
+#body_List>#body_writer{
+    float:left;
+    width:200px;
+    height:750px;
+    text-align:center;
+    font-size:24px;
+    margin:auto;
+    margin-top:5px;
+}
+
+#body_List>#body_writedate{
+    float:left;
+    width:425px;
+    height:750px;
+    text-align:center;
+    font-size:24px;
+    margin:auto;
+    margin-top:5px;
 }
 
 #List_teacherportal>button{
@@ -103,12 +198,53 @@ hr{
 }
 
 #View_teacherportal>#View{
-    width:1920px;
+    float:left;
+    width:1625px;
     height:800px;
     background-color:#FFFFFF;
 }
 
-#View_teacherportal>button{
+#View>#title_View{
+    width:1625px;
+    height:100px;
+    background-color:#FFFFFF;
+    font-size:24px;
+    margin:auto;
+
+}
+
+#View>#content_View{
+    width:1625px;
+    height:500px;
+    background-color:#FFFFFF;
+    font-size:24px;
+    margin:auto;
+
+}
+
+#View>#file_View{
+    width:1625px;
+    height:200px;
+    background-color:#FFFFFF;
+    font-size:24px;
+    margin:auto;
+
+}
+
+#View_teacherportal>#back{
+    float:left;
+    width:103px;
+    height:51px;
+    background-color:#6F7C86;
+    border-color:#6F7C86;
+    margin:auto;
+    margin-top:22px;
+    margin-left:20px;
+    font-size:15px;
+    color:#FFFFFF;
+}
+
+#View_teacherportal>#revise{
     float:right;
     width:103px;
     height:51px;
@@ -122,8 +258,8 @@ hr{
 }
 
 #Lecturedata>#Write_teacherportal{
-     width:1920px;
-     height:800px;
+    width:1920px;
+    height:800px;
 }
 
 #Write_teacherportal>#Write{
@@ -132,7 +268,101 @@ hr{
     background-color:#FFFFFF;
 }
 
-#Write_teacherportal>button{
+#Write>#title_Write{
+    width:1920px;
+    height:100px;
+}
+
+#title_Write>#tWrite{
+    margin:auto;
+    margin-top:25px;
+    float:left;
+    width:300px;
+    height:50px;
+    font-size:24px;
+    text-align:right;
+}
+
+#title_Write>input{
+    float:left;
+    width:1000px;
+    height:50px;
+    margin:auto;
+    margin-top:20px;
+    margin-left:30px;
+    background-color:#FFFFFF;
+    font-size:24px;
+    text-align:left;
+}
+
+#Write>#content_Write{
+    width:1920px;
+    height:500px;
+}
+
+#content_Write>#cWrite{
+    margin:auto;
+    margin-top:25px;
+    float:left;
+    width:300px;
+    height:400px;
+    font-size:24px;
+    text-align:right;
+}
+
+#content_Write>input{
+    float:left;
+    width:1000px;
+    height:450px;
+    margin:auto;
+    margin-top:20px;
+    margin-left:30px;
+    background-color:#FFFFFF;
+    font-size:24px;
+    text-align:left;
+}
+
+#Write>#file_Write{
+    width:1920px;
+    height:200px;
+}
+
+#file_Write>#fWrite{
+    margin:auto;
+    margin-top:25px;
+    float:left;
+    width:300px;
+    height:100px;
+    font-size:24px;
+    text-align:right;
+}
+
+#file_Write>input{
+    float:left;
+    width:1000px;
+    height:50px;
+    margin:auto;
+    margin-top:20px;
+    margin-left:30px;
+    background-color:#FFFFFF;
+    font-size:24px;
+    text-align:left;
+}
+
+#file_Write>#find{
+    float:left;
+    width:103px;
+    height:51px;
+    background-color:#6F7C86;
+    border-color:#6F7C86;
+    margin:auto;
+    margin-top:22px;
+    margin-left:20px;
+    font-size:15px;
+    color:#FFFFFF;
+}
+
+#Write_teacherportal>#save{
     float:right;
     width:103px;
     height:51px;

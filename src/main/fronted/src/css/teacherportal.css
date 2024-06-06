@@ -184,6 +184,21 @@ hr{
     margin-top:5px;
 }
 
+#body_List > div {
+    display: grid;
+    grid-template-columns: 100px 900px 200px 425px auto;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0;
+}
+
+#cate_List > div,
+#body_List > div > div,
+#body_List > div > button {
+    text-align: center;
+}
+
+
 #List_teacherportal>button{
     float:right;
     width:103px;

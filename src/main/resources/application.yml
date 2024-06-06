@@ -15,18 +15,22 @@ spring:
       project-id: midas-424214
       bucket: sprofile
 
-  spring:
-    mail:
-      host: smtp.naver.com
-      port: 587
-      username: goseum24@naver.com
-      password: goseumdochi4
-      properties:
-        mail:
-          smtp:
-            auth: true
-            starttls:
-              enable: true
+  mail:
+    host: smtp.naver.com
+    port: 587
+    username: goseum24@naver.com
+    password: goseumdochi4
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+
+  servlet:
+    multipart:
+      max-file-size: 10MB
+      max-request-size: 10MB
 
   jpa:
     database: mysql

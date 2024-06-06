@@ -42,11 +42,17 @@ public class IntegrateService {
         // 선생 로그인
         Optional<TeacherEntity> findTeacher = teacherRepository.findByLoginid(loginid);
         if (findTeacher.isPresent()) {
-            if (encDecService.decrypt(findTeacher.get().getPassword()).equals(password)) // 로그인 성공
+            if (encDecService.decrypt(findTeacher.get().getPassword()).equals(password)) {
+                // 로그인 성공 시 세션에 정보 저장
+                session.setAttribute("loginTeacherId", findTeacher.get().getLoginid());
+                session.setAttribute("loginId", findTeacher.get().getId());
+                session.setAttribute("teacherName", findTeacher.get().getName());
+
                 return ResponseEntity.ok(new UserDTO(findTeacher.get().getId(), "teacher"
                         , findTeacher.get().getAcademyEntity().getId()));
-            else // 실패
+            } else {
                 return ResponseEntity.status(HttpStatus.UNAUTHORIZED).body("선생님 비밀번호가 일치하지 않습니다.");
+            }
         }
 
         // 학생 로그인

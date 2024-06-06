@@ -28,9 +28,9 @@ public class LectureMaterialService {
                 .title(lectureMaterialDTO.getTitle())
                 .content(lectureMaterialDTO.getContent())
                 .author(lectureMaterialDTO.getAuthor())
-                .createdAt(LocalDateTime.now()) // 현재 시각을 설정
+                .createdAt(LocalDateTime.now())
                 .attachmentPath(lectureMaterialDTO.getAttachmentPath())
-                .lectureEntity(lectureRepository.findById(lectureMaterialDTO.getLectureId()).get()) // fk
+                .lectureEntity(lectureRepository.findById(lectureMaterialDTO.getLectureId()).get())
                 .build();
         lectureMaterialRepository.save(entity);
     }
@@ -58,6 +58,19 @@ public class LectureMaterialService {
                 entity.getCreatedAt(),
                 entity.getAttachmentPath()
         );
+    }
+
+    // 특정 강의의 모든 강의 자료를 조회
+    public List<LectureMaterialDTO> getMaterialsByLectureId(Long lectureId) {
+        List<LectureMaterialEntity> entities = lectureMaterialRepository.findAllByLectureId(lectureId);
+        return entities.stream().map(entity -> new LectureMaterialDTO(
+                entity.getId(),
+                entity.getTitle(),
+                entity.getContent(),
+                entity.getAuthor(),
+                entity.getCreatedAt(),
+                entity.getAttachmentPath()
+        )).collect(Collectors.toList());
     }
 
     // 특정 강의 자료를 업데이트

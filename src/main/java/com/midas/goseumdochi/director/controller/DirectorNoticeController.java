@@ -56,9 +56,9 @@ public class DirectorNoticeController {
 
     @PostMapping("/addNotice")
     public ResponseEntity<String> addNotice(@RequestBody DirectorNoticeDTO noticeDTO) {
-        if (!isLoggedIn()) {
-            return ResponseEntity.status(HttpStatus.UNAUTHORIZED).build();
-        }
+//        if (!isLoggedIn()) {
+//            return ResponseEntity.status(HttpStatus.UNAUTHORIZED).build();
+//        }
 
         // 현재 로그인된 원장님의 ID를 작성자로 저장
         String writer = (String) httpSession.getAttribute("directorId");
@@ -71,7 +71,6 @@ public class DirectorNoticeController {
         notice.setTitle(noticeDTO.getTitle());
         notice.setContent(noticeDTO.getContent());
         notice.setRegdate(regdate);
-        notice.setWriter(writer);
         notice.setDirectorEntity(directorRepository.findById(noticeDTO.getDirectorId()).get()); // 연관관계 추가해서
 
         noticeRepository.save(notice);

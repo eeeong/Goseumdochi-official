@@ -14,11 +14,10 @@ public class DirectorNoticeDTO {
     }
 
     // directorId 만 없는 생성자
-    public DirectorNoticeDTO(Long num, String title, String content, String writer, Date regdate) {
+    public DirectorNoticeDTO(Long num, String title, String content, Date regdate) {
         this.num = num;
         this.title = title;
         this.content = content;
-        this.writer = writer;
         this.regdate = regdate;
     }
 
@@ -39,14 +38,6 @@ public class DirectorNoticeDTO {
 
     public void setContent(String content) {
         this.content = content;
-    }
-
-    public String getWriter() {
-        return writer;
-    }
-
-    public void setWriter(String writer) {
-        this.writer = writer;
     }
 
     public Date getRegdate() {

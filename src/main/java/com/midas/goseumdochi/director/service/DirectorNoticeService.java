@@ -35,7 +35,7 @@ public class DirectorNoticeService {
 
         // 이렇게 page로 map해서 리턴하면 위의 페이지 관련 변수도 전달됨
         Page<DirectorNoticeDTO> directorNoticeDTOPage = directorNoticeEntityPage.map(entity -> new DirectorNoticeDTO(
-                entity.getNum(), entity.getTitle(), entity.getContent(), entity.getWriter(), entity.getRegdate()));
+                entity.getNum(), entity.getTitle(), entity.getContent(), entity.getRegdate()));
 
         return directorNoticeDTOPage;
     }

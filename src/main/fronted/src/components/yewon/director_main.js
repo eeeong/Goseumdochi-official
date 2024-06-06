@@ -21,6 +21,11 @@ function DirectorMain() {
         navigate('/director/student/manage', { state: { user: user } })
     }
 
+    const GoNoticeWrite=()=>{
+        console.log(user);
+        navigate('/director_notice_write', { state: { user: user } })
+    }
+
     return (
         <div id="App">
             <div id="teachermain-menu">
@@ -31,6 +36,7 @@ function DirectorMain() {
                     <input type="submit" value="과목관리" id="lecture_btn" onClick={GoSubjectManage}/>
                     <input type="submit" value="선생관리" id="studentmanage_btn " onClick={GoTeacherManage}/>
                     <input type="submit" value="학생관리" id="mypage_btn" onClick={GoStudentManage}/>
+                    <input type="submit" value="공지 작성" id="notice_write_btn" onClick={GoNoticeWrite}/>
                     <div id="rect"/>
                 </div>
                 <div id="contents_teachermain">

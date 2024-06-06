@@ -37,7 +37,7 @@ Ai made by MSY
 
 ## 대학-학과 추천 ai api
 1. 대학-학과 추천  
-1-1. 주소 : http://34.64.213.105:5002/recommand  
+1-1. 주소 : http://34.64.213.105:5002/recommend  
 1-2. input 매개변수
 
         1-2-1. major_subject = 관심있는 과목(문자열)

@@ -41,6 +41,7 @@ Ai made by MSY
 1-2. input 매개변수
 
         1-2-1. major_subject = 관심있는 과목(문자열)
+        1-2-2. n_recommendations: =output갯수 
 
     1-3. output 내용  
     ```

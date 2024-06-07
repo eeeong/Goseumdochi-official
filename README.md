@@ -4,7 +4,7 @@ Ai made by MSY
 # API 사용법
 ## 암호화 api  
 1. enc(암호화)  
-1-1. 주소 : http://34.64.213.105:5000/encrypt
+1-1. 주소 : http://34.64.213.105:5000/encrypt  
 1-2. input 매개변수  
         
         1-2-1. text = 암호화 할 문자열

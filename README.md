@@ -4,7 +4,7 @@ Ai made by MSY
 # API 사용법
 ## 암호화 api  
 1. enc(암호화)  
-1-1. 주소 : http://34.64.213.105:5000/encrypt  
+1-1. 주소 : http://34.22.107.80:5000/encrypt  
 1-2. input 매개변수  
         
         1-2-1. text = 암호화 할 문자열
@@ -13,7 +13,7 @@ Ai made by MSY
     
         암호화된 문자열로 나옴. 방식(AES방식)
 2. dec(복호화)  
-2-1. 주소 : http://34.64.213.105:5000/decrypt  
+2-1. 주소 : http://34.22.107.80:5000/decrypt  
 2-2. input 매개변수
 
         2-2-1. text = 복호화 할 암호문(문자열)
@@ -26,7 +26,7 @@ Ai made by MSY
 
 ## 비방목적 글 분류 ai api
 1. 비방목적 분류  
-1-1. 주소 : http://34.64.213.105:5001/classify  
+1-1. 주소 : http://34.22.107.80:5001/classify  
 1-2. input 매개변수
 
         1-2-1. text = 분류할 글(문자열)
@@ -37,7 +37,7 @@ Ai made by MSY
 
 ## 대학-학과 추천 ai api
 1. 대학-학과 추천  
-1-1. 주소 : http://34.64.213.105:5002/recommend  
+1-1. 주소 : http://34.22.107.80:5002/recommend  
 1-2. input 매개변수
 
         1-2-1. major_subject = 관심있는 과목(문자열)

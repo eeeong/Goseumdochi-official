@@ -1,7 +1,8 @@
 from flask import Flask, request, jsonify
 from transformers import AutoTokenizer, AutoModelForSeq2SeqLM
 import torch
-
+import transformers
+print(transformers.__version__)
 app = Flask(__name__)
 
 tokenizer = AutoTokenizer.from_pretrained("./kobart-summarization-finetuned")

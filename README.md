@@ -1,7 +1,7 @@
 # Goseumdochi-Official API 문서
 
 ## MIDAS 2024 팀 프로젝트  
-### MSY 개발 AI  
+### AI(MSY)  
 
 ---
 

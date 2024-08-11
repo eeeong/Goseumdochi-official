@@ -1,11 +1,7 @@
 # Goseumdochi-Official API 문서
 
 ## MIDAS 2024 팀 프로젝트  
-<<<<<<< HEAD
-### MSY(AI)
-=======
-### AI(MSY)  
->>>>>>> e8a01b7a340a625e9a5a62893a98a7d7b0c05360
+### AI(MSY)
 
 ---
 

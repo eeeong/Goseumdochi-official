@@ -1,7 +1,7 @@
 # Goseumdochi-Official API 문서
 
 ## MIDAS 2024 팀 프로젝트  
-### MSY 개발 AI  
+### MSY(AI)
 
 ---
 
@@ -78,6 +78,7 @@
     "학위과정명": "학사"
 }
 ```
+---
 ### 5. 텍스트 요약 API  
 - **엔드포인트:** `http://34.22.107.80:5003/summarize`  
 - **요청 방식:** POST

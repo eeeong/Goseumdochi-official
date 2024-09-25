@@ -88,3 +88,23 @@
 
 #### 5.2. 출력  
 - 요약된 텍스트가 반환됩니다.
+
+---
+
+### 6. 수학 문제 풀이 API  
+- **엔드포인트:** `http://34.64.237.19:5004/solve`  
+- **요청 방식:** POST
+
+#### 6.1. 입력 파라미터  
+- `problem`: 풀고자 하는 수학 문제 (문자열)
+
+#### 6.2. 출력  
+- 입력된 수학 문제에 대한 해답을 포함하는 JSON 객체가 반환됩니다.  
+- **예시 입력:** `problem = "Find the value of $x$ that satisfies the equation $4x+5 = 6x+7$."`
+  
+- **예시 출력:**  
+
+```json
+{
+    "solution": "To solve the equation \\(4x + 5 = 6x + 7\\), we need to isolate the variable \\(x\\). Here are the steps to do that:\n\n1. Start with the given equation:\n   \\[\n   4x + 5 = 6x + 7\n   \\]\n\n2. Subtract \\(4x\\) from both sides of the equation to eliminate \\(x\\) from the left side:\n   \\[\n   4x + 5 - 4x = 6x + 7 - 4x\n   \\]\n   Simplifying both sides, we get:\n   \\[\n   5 = 2x + 7\n   \\]\n\n3. Next, subtract 7 from both sides to isolate the term with \\(x\\) on the right side:\n   \\[\n   5 - 7 = 2x + 7 - 7\n   \\]\n   Simplifying both sides, we get:\n   \\[\n   -2 = 2x\n   \\]\n\n4. Finally, divide both sides by 2 to solve for \\(x\\):\n   \\[\n   \\frac{-2}{2} = \\frac{2x}{2}\n   \\]\n   Simplifying both sides, we get:\n   \\[\n   -1 = x\n   \\]\n   or\n   \\[\n   x = -1\n   \\]\n\nTherefore, the value of \\(x\\) that satisfies the equation is \\(\\boxed{-1}\\)."
+}

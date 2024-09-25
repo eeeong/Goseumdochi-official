@@ -4,16 +4,17 @@ import torch
 
 app = Flask(__name__)
 
-# 모델과 토크나이저 로드
-model_name = "Qwen/Qwen2.5-Math-1.5B-Instruct"
+# 저장된 모델 경로
+model_path = "./model_0925"
 device = "cuda" if torch.cuda.is_available() else "cpu"
 
+# 모델과 토크나이저 로드
 model = AutoModelForCausalLM.from_pretrained(
-    model_name,
+    model_path,
     torch_dtype=torch.float16 if torch.cuda.is_available() else torch.float32,
     device_map="auto" if torch.cuda.is_available() else None
 )
-tokenizer = AutoTokenizer.from_pretrained(model_name)
+tokenizer = AutoTokenizer.from_pretrained(model_path)
 
 # API 엔드포인트 정의
 @app.route('/solve', methods=['POST'])
@@ -51,7 +52,6 @@ def solve_math_problem():
 
     except Exception as e:
         return jsonify({"error": str(e)}), 500
-
 
 if __name__ == '__main__':
     app.run(debug=True)

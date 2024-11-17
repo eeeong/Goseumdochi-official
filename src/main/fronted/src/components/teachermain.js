@@ -1,6 +1,5 @@
 import '../css/teachermain.css';
-import logo from './images/goseumdochi_moving.gif';
-import logo_pic from './images/goseumdochi.png';
+import logo from './images/goseumdochi.png';
 import {useLocation, useNavigate} from 'react-router-dom';
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
@@ -152,7 +151,7 @@ function App25() {
                             <div id="contents_Teacherinfo">
                                 <div id="blank_Teacherinfo"/>
                                 <div id="content_Teacherinfo">
-                                    <img src={logo_pic} alt="logo" />
+                                    <img src={logo} alt="logo" />
                                     <div id="Teachername">
                                         {user.name}
                                     </div>
